@@ -7,6 +7,6 @@ export class AppController {
 
   @Get('health')
   health() {
-    return { status: 'OK' };
+    return { status: 'OK-DevOps' };
   }
 }
