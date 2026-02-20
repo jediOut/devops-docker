@@ -18,10 +18,13 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
+        working-directory: backend/devops-mini-project
         run: npm install
 
       - name: Run tests
+        working-directory: backend/devops-mini-project
         run: npm run test
 
       - name: Build Docker image
+        working-directory: backend/devops-mini-project
         run: docker build -t nest-devops-app .
