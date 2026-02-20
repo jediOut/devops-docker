@@ -16,7 +16,7 @@ describe('AppController', () => {
 
   describe('health', () => {
     it('should return health status', () => {
-      expect(appController.health()).toEqual({ status: 'OK' });
+      expect(appController.health()).toEqual({ status: 'OK-DevOps' });
     });
   });
 });
